@@ -10,7 +10,7 @@ def J(theta):
     try:
         return (theta - 2.5) ** 2 - 1
     except:
-        return float(int)
+        return float('inf')
 
 def gradient_descent(initial_theta, eta, epsilon = 1e-8, n_iters = 1e4):
     theta = initial_theta
