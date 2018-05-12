@@ -21,7 +21,7 @@ def gradient_descent(initial_theta, eta, epsilon = 1e-8, n_iters = 1e4):
         theta -= eta * gradient
         theta_history.append(theta)
         i_iter += 1
-        if abs(theta - pre_theta) < epsilon:
+        if abs(J(theta) - J(pre_theta)) < epsilon:
             break
     return theta
 
