@@ -33,5 +33,4 @@ initial_theta = np.zeros(X_b.shape[1])
 eta = 0.01
 
 theta = gradient_descent(X_b, y, initial_theta, eta)
-
 print(theta)
